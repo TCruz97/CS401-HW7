@@ -8,12 +8,14 @@
 <body>
 <?php
 session_start();
+
+mysql://b9e6ea80030140:b6fe7b1d@us-cdbr-iron-east-05.cleardb.net/heroku_19ca8ac0b4b3b5c?reconnect=true
 class user{
     public function saveUser($email,$pass){
-        $host = "localhost";
-        $user = "root";
-        $password = "root";
-        $db = "WebsiteDB";
+        $host = "us-cdbr-iron-east-05.cleardb.net";
+        $user = "b9e6ea80030140";
+        $password = "b6fe7b1d";
+        $db = "heroku_19ca8ac0b4b3b5c";
         
         // Create connection
         $conn = new mysqli($host, $user, $password, $db);
