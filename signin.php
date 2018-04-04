@@ -57,7 +57,7 @@ $result = $conn->query($sql);
 }
 ?>
         <div class="logo">
-                <a href="index.html">
+                <a href="index.php">
                 <img border="0" alt="default" src="logo2.png" width="64px" height="64px">
         </div>
            <!-- search bad and other elements -->
