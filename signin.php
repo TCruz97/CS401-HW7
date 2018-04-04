@@ -51,15 +51,16 @@ if ($conn->connect_error) {
 } 
 
 $sql = "SELECT email, pass FROM guest where email = '$email' and pass = '$pass'";
-if($result != $conn->query($sql)){
-   
-    echo "You need an account to login";
-    }
+if($result = $conn->query($sql)){
 
-    else{
-        return $result;
-    }
+    return $result;
 }
+else{
+    echo "You Need to Create an Account";
+}
+
+    
+ }
 }
 ?>
         <div class="logo">
