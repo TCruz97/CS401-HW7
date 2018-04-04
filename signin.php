@@ -37,10 +37,10 @@ class user{
      }
 
 public function getUser($email,$pass){
-    $host = 'localhost';
-    $user = 'root';
-    $password = 'root';
-    $db = 'WebsiteDB';
+    $host = "us-cdbr-iron-east-05.cleardb.net";
+    $user = "b9e6ea80030140";
+    $password = "b6fe7b1d";
+    $db = "heroku_19ca8ac0b4b3b5c";
    
 
 // Create connection
@@ -51,9 +51,14 @@ if ($conn->connect_error) {
 } 
 
 $sql = "SELECT email, pass FROM guest where email = '$email' and pass = '$pass'";
-$result = $conn->query($sql);
+if($result = $conn->query($sql)){
 
     return $result;
+}
+else{
+    echo "You need an account to login";
+}
+
     
  }
 }
