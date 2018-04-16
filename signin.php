@@ -6,6 +6,9 @@
     <link rel="shortcut icon" type="image/x-icon" href="https://cdn4.iconfinder.com/data/icons/objects-5/24/Needle-512.png" />
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="/webvanta/js/jquery/1.4/jquery-1.4.2.min.js" type="text/javascript"></script>
+    <script src="/webvanta/js/jquery/1.4/plugins/form/jquery.form.js" type="text/javascript"></script>
+    <script src="/webvanta/js/jquery/1.4/plugins/validate/jquery.validate.min.js" type="text/javascript"></script>
     <script>
         $( function() {
             $( document ).tooltip();
