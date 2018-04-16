@@ -214,27 +214,29 @@ if(isset($_POST['in']))
             <button type="submit" id="signButton" style="margin-left:200px;" name="up">Sign Up</button>
             <script>
                 
-        $(document).ready(function () {
-            $("#signButton").click(function () {
-                var fname = $('fName').val();
-                var lname = $('lName').val();
-                var address = $('address').val();
-                var city = $('city').val();
-                var state = $('state').val();
-                var zip = $('zip').val();
-                var email = $('email').val();
-                var pass1 = $('pass').val();
-                var pass2 = $('pass2').val();
+                $(document).ready(function () {
+                    $("#signButton").click(function () {
+                        var fname = $('fName').val();
+                        var lname = $('lName').val();
+                        var address = $('address').val();
+                        var city = $('city').val();
+                        var state = $('state').val();
+                        var zip = $('zip').val();
+                        var email = $('email').val();
+                        var pass1 = $('pass').val();
+                        var pass2 = $('pass2').val();
 
 
 
-                if (fName.length == 0) {
-                    alert("Please input a first name");
-                } else if (lName.length == 0) {
-                    alert("Please input a last name");
-                }
-            });
-        });
+                        if (fName.length == 0) {
+                            alert("Please input a first name");
+                        } else if (lName.length == 0) {
+                            alert("Please input a last name");
+                        }
+                    });
+                });
+            </script>
+        
 
 
         </div>
