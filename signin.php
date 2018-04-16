@@ -4,6 +4,19 @@
 <head>
     <link rel = "stylesheet" type= "text/css" href="signin.css">
     <link rel="shortcut icon" type="image/x-icon" href="https://cdn4.iconfinder.com/data/icons/objects-5/24/Needle-512.png" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( document ).tooltip();
+        } );
+        </script>
+        <style>
+        label {
+            display: inline-block;
+            width: 5em;
+        }
+        </style>
 </head>
 <body>
 <?php
@@ -200,7 +213,7 @@ if(isset($_POST['in']))
             <input type="text" placeholder="Enter State" name="state">
             <input type="text" placeholder="Enter Zip" name="zip">
             <input type="text" placeholder="Enter email" name="email">
-            <input type="password" placeholder="Enter Password" name="pass">  
+            <input type="password" placeholder="Enter Password" name="pass" title = "Enter at least 8 characters">  
             <input type="password" placeholder="Repeat Password" name="pswd2">     
           
             <button type="submit" id="signButton" style="margin-left:200px;" name="up">Sign Up</button>
