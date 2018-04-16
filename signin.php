@@ -6,12 +6,10 @@
     <link rel="shortcut icon" type="image/x-icon" href="https://cdn4.iconfinder.com/data/icons/objects-5/24/Needle-512.png" />
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script src="dist/validator.js"></script>
-
     <script>
         $( function() {
             $( document ).tooltip();
+            tooltipClass: "tooltip"
         } );
         </script>
 </head>
@@ -211,36 +209,10 @@ if(isset($_POST['in']))
             <input type="text" placeholder="Enter Zip" name="zip">
             <input type="text" placeholder="Enter email" name="email">
             <input type="password" placeholder="Enter Password" name="pass" title = "Enter at least 8 characters One uppercase At least one number or symbol">  
-            <input type="password" placeholder="Repeat Password" name="pass2">     
+            <input type="password" placeholder="Repeat Password" name="pswd2">     
           
             <button type="submit" id="signButton" style="margin-left:200px;" name="up">Sign Up</button>
-            <!-- <script>
-                
-                $(document).ready(function () {
-                    $("#signButton").click(function () {
-                        var fname = $('fName').val();
-                        var lname = $('lName').val();
-                        var address = $('address').val();
-                        var city = $('city').val();
-                        var state = $('state').val();
-                        var zip = $('zip').val();
-                        var email = $('email').val();
-                        var pass1 = $('pass').val();
-                        var pass2 = $('pass2').val();
-
-
-
-                        if (fName.length == 0) {
-                            alert("Please input a first name");
-                        } else if (lName.length == 0) {
-                            alert("Please input a last name");
-                        }
-                    });
-                });
-            </script>
-         -->
-
-
+            
         </div>
 
           
