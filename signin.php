@@ -207,7 +207,7 @@ if(isset($_POST['in']))
           </div>
       
           <div class="container">
-            <input type="text" placeholder="Enter First Name" name="fName">
+            <input type="text" placeholder="Enter First Name" name="fName" value = "<?php echo ($_POST['fName']); ?>">
             <input type="text" placeholder="Enter Last Name" name="lName">
             <input type="text" placeholder="Enter Address" name="address">
             <input type="text" placeholder="Enter City" name="city">
