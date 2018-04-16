@@ -11,7 +11,7 @@ session_start();
 
 mysql://b9e6ea80030140:b6fe7b1d@us-cdbr-iron-east-05.cleardb.net/heroku_19ca8ac0b4b3b5c?reconnect=true
 class user{
-    public function saveUser($email,$pass){
+    public function saveUser($email,$pass, $firstName, $lastName, $address, $city, $state, $zip){
         $host = "us-cdbr-iron-east-05.cleardb.net";
         $user = "b9e6ea80030140";
         $password = "b6fe7b1d";
@@ -26,8 +26,8 @@ class user{
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             echo "Invalid Email";
         }
-        $sql = "INSERT INTO guest (email,pass)
-        VALUES ('$email', '$pass')";
+        $sql = "INSERT INTO guest (email,pass, firstName, lastName, address, city, state, zip)
+        VALUES ('$email', '$pass', '$firstName','$lastName','$address','$city','$state', '$zip')";
         
         if ($conn->query($sql) === TRUE) {
      }
@@ -99,7 +99,13 @@ if(isset($_POST['up']))
     $y = new user();
     $email = $_POST["email"];
     $pass = $_POST["pass"];
-    $y -> saveUser($email,$pass);
+    $firstName = $_POST["fName"];
+    $lastName = $_POST["lName"];
+    $address = $_POST["address"];
+    $city = $_POST["city"];
+    $state $_POST["state"];
+    $zip = $_POST["zip"];
+    $y -> saveUser($email,$pass, $firstName, $lastName, $address, $city, $state, $zip);
 }
 
 if(isset($_POST['in']))
