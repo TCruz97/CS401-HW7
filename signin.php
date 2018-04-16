@@ -9,7 +9,7 @@
     <script>
         $( function() {
             $( document ).tooltip();
-            position: { my: "left top+15", at: "left bottom", collision: "flipfit" }
+            tooltipClass: "tooltip"
         } );
         </script>
 </head>
@@ -208,7 +208,7 @@ if(isset($_POST['in']))
             <input type="text" placeholder="Enter State" name="state">
             <input type="text" placeholder="Enter Zip" name="zip">
             <input type="text" placeholder="Enter email" name="email">
-            <input type="password" placeholder="Enter Password" name="pass" title = "Enter at least 8 characters">  
+            <input type="password" placeholder="Enter Password" name="pass" title = "Enter at least 8 characters" class = "tooltip">  
             <input type="password" placeholder="Repeat Password" name="pswd2">     
           
             <button type="submit" id="signButton" style="margin-left:200px;" name="up">Sign Up</button>
