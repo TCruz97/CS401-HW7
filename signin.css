@@ -365,7 +365,7 @@ p.footer-links a:hover {
     z-index: 100;
 }
 
-.your-field.error {
+.email.error {
     border-color: red;
 }
 
@@ -373,6 +373,6 @@ p.footer-links a:hover {
     border-color: orange;
 }
 
-.your-field.valid {
+.email.valid {
     border-color: green;
 }

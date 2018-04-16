@@ -12,7 +12,7 @@
         $( function() {
             $(document).tooltip();
         } );
-        </script>
+    </script>
 </head>
 <body>
 <?php
