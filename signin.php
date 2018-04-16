@@ -207,13 +207,13 @@ if(isset($_POST['in']))
           </div>
       
           <div class="container">
-            <input type="text" placeholder="Enter First Name" name="fName" value = "<?php echo ($_POST['fName']); ?>">
-            <input type="text" placeholder="Enter Last Name" name="lName">
-            <input type="text" placeholder="Enter Address" name="address">
-            <input type="text" placeholder="Enter City" name="city">
-            <input type="text" placeholder="Enter State" name="state">
-            <input type="text" placeholder="Enter Zip" name="zip">
-            <input type="text" placeholder="Enter email" name="email">
+            <input type="text" placeholder="Enter First Name" name="fName" value="<?php echo isset($_POST['fName'])? $_POST['fName'] : "" ?>">
+            <input type="text" placeholder="Enter Last Name" name="lName" value = "<?php echo isset($_POST['lName'])? $_POST['lName'] : "" ?>">
+            <input type="text" placeholder="Enter Address" name="address"value = "<?php echo isset($_POST['address'])? $_POST['address'] : "" ?>">
+            <input type="text" placeholder="Enter City" name="city" value = "<?php echo isset($_POST['city'])? $_POST['city'] : "" ?>">
+            <input type="text" placeholder="Enter State" name="state" value ="<?php echo isset($_POST['state'])? $_POST['state'] : "" ?>">
+            <input type="text" placeholder="Enter Zip" name="zip" value = "<?php echo isset($_POST['zip'])? $_POST['zip'] : "" ?>">
+            <input type="text" placeholder="Enter email" name="email" value = "<?php echo isset($_POST['email'])? $_POST['email'] : "" ?>">
             <input type="password" placeholder="Enter Password" name="pass" title = "Enter at least 8 characters One uppercase At least one number or symbol">  
             <input type="password" placeholder="Repeat Password" name="pswd2">     
           
