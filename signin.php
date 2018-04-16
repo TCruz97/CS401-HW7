@@ -166,8 +166,8 @@ if(isset($_POST['in']))
           </div>
       
           <div class="container">
-            <input type="text" placeholder="Enter Username" name="email" required>
-            <input type="password" placeholder="Enter Password" name="pass" required>        
+            <input type="text" class ="field" placeholder="Enter Username" name="email" required>
+            <input type="password" class ="field" placeholder="Enter Password" name="pass" required>        
             <button type="submit" id="upButton" style="margin-left:200px;"name="in">Sign In</button>
           </div>
           
@@ -204,23 +204,23 @@ if(isset($_POST['in']))
           </div>
       
           <div class="container">
-            <input class ="field" type="text" placeholder="Enter First Name" name="fName" value="<?php echo isset($_POST['fName'])? $_POST['fName'] : "" ?>" required
+            <input  type="text" class ="field" placeholder="Enter First Name" name="fName" value="<?php echo isset($_POST['fName'])? $_POST['fName'] : "" ?>" required
             data-missing="This field is required">
-            <input class ="field" type="text" placeholder="Enter Last Name" name="lName" value = "<?php echo isset($_POST['lName'])? $_POST['lName'] : "" ?>" required
+            <input type="text" class ="field" placeholder="Enter Last Name" name="lName" value = "<?php echo isset($_POST['lName'])? $_POST['lName'] : "" ?>" required
             data-missing="This field is required">
-            <input class ="field" type="text" placeholder="Enter Address" name="address"value = "<?php echo isset($_POST['address'])? $_POST['address'] : "" ?>" required
+            <input  type="text" class ="field" placeholder="Enter Address" name="address"value = "<?php echo isset($_POST['address'])? $_POST['address'] : "" ?>" required
             data-missing="This field is required">
-            <input class ="field" type="text" placeholder="Enter City" name="city" value = "<?php echo isset($_POST['city'])? $_POST['city'] : "" ?>" required
+            <input  type="text" class ="field" placeholder="Enter City" name="city" value = "<?php echo isset($_POST['city'])? $_POST['city'] : "" ?>" required
             data-missing="This field is required">
-            <input class ="field" type="text" placeholder="Enter State" name="state" value ="<?php echo isset($_POST['state'])? $_POST['state'] : "" ?>" required
+            <input  type="text" class ="field" placeholder="Enter State" name="state" value ="<?php echo isset($_POST['state'])? $_POST['state'] : "" ?>" required
             data-missing="This field is required">
-            <input class ="field" type="text" placeholder="Enter Zip" name="zip" value = "<?php echo isset($_POST['zip'])? $_POST['zip'] : "" ?>" required
+            <input type="text" class ="field" placeholder="Enter Zip" name="zip" value = "<?php echo isset($_POST['zip'])? $_POST['zip'] : "" ?>" required
             data-missing="This field is required">
-            <input class ="field" type="text" placeholder="Enter email" name="email" value = "<?php echo isset($_POST['email'])? $_POST['email'] : "" ?>"  required
+            <input  type="text" class ="field" placeholder="Enter email" name="email" value = "<?php echo isset($_POST['email'])? $_POST['email'] : "" ?>"  required
                 data-missing="This field is required">
-            <input class ="field" type="password" placeholder="Enter Password" name="pass" title = "Enter at least 8 characters One uppercase At least one number or symbol"
+            <input type="password" class ="field" placeholder="Enter Password" name="pass" title = "Enter at least 8 characters One uppercase At least one number or symbol"
             required data-missing="This field is required">  
-            <input class ="field" type="password" placeholder="Repeat Password" name="pswd2">     
+            <input  type="password" class ="field" placeholder="Repeat Password" name="pswd2">     
           
             <button type="submit" id="signButton" style="margin-left:200px;" name="up">Sign Up</button>
             
