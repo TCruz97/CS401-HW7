@@ -103,7 +103,7 @@ if(isset($_POST['up']))
     $lastName = $_POST["lName"];
     $address = $_POST["address"];
     $city = $_POST["city"];
-    $state $_POST["state"];
+    $state = $_POST["state"];
     $zip = $_POST["zip"];
     $y -> saveUser($email,$pass, $firstName, $lastName, $address, $city, $state, $zip);
 }
