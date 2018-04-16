@@ -1,0 +1,10 @@
+bower_components
+assets
+demo
+docs
+test
+/_*
+/.*
+dist/*.map
+bower.json
+gulpfile.js
