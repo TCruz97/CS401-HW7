@@ -9,7 +9,7 @@
     <script>
         $( function() {
             $( document ).tooltip();
-          //  position: { my: "right+15 center", at: "right center" }
+            position: { my: "left top+15", at: "left bottom", collision: "flipfit" }
         } );
         </script>
 </head>
