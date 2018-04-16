@@ -119,12 +119,12 @@ if(isset($_POST['up']))
     $city = $_POST["city"];
     $state = $_POST["state"];
     $zip = $_POST["zip"];
-    if($email == 0 || $pass == 0 || $firstName == 0 || $lastName == 0 || $address == 0 || $city == 0 || $state == 0 || $zip == 0){
-        //echo"error";
-    }
-    else{
+    // if($email == 0 || $pass == 0 || $firstName == 0 || $lastName == 0 || $address == 0 || $city == 0 || $state == 0 || $zip == 0){
+    //     //echo"error";
+    // }
+    //else{
         $y -> saveUser($email,$pass, $firstName, $lastName, $address, $city, $state, $zip);
-    }
+    //}
 }
 
 if(isset($_POST['in']))
