@@ -12,7 +12,7 @@
         } );
         </script>
         <style>
-        label {
+        title {
             display: inline-block;
             width: 5em;
         }
