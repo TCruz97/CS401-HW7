@@ -209,10 +209,34 @@ if(isset($_POST['in']))
             <input type="text" placeholder="Enter Zip" name="zip">
             <input type="text" placeholder="Enter email" name="email">
             <input type="password" placeholder="Enter Password" name="pass" title = "Enter at least 8 characters One uppercase At least one number or symbol">  
-            <input type="password" placeholder="Repeat Password" name="pswd2">     
+            <input type="password" placeholder="Repeat Password" name="pass2">     
           
             <button type="submit" id="signButton" style="margin-left:200px;" name="up">Sign Up</button>
-            
+            <script>
+                
+        $(document).ready(function () {
+            $("#signButton").click(function () {
+                var fname = $('fName').val();
+                var lname = $('lName').val();
+                var address = $('address').val();
+                var city = $('city').val();
+                var state = $('state').val();
+                var zip = $('zip').val();
+                var email = $('email').val();
+                var pass1 = $('pass').val();
+                var pass2 = $('pass2').val();
+
+
+
+                if (fName.length == 0) {
+                    alert("Please input a first name");
+                } else if (lName.length == 0) {
+                    alert("Please input a last name");
+                }
+            });
+        });
+
+
         </div>
 
           
