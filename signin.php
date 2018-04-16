@@ -193,6 +193,7 @@ if(isset($_POST['in']))
             <input type="text" placeholder="Enter City" name="city">
             <input type="text" placeholder="Enter State" name="state">
             <input type="text" placeholder="Enter Zip" name="zip"> -->
+            <label for="email">Enter your email:</label>
             <input type="text" placeholder="Enter email" name="email">
             <input type="password" placeholder="Enter Password" name="pass">  
             <input type="password" placeholder="Repeat Password" name="pswd2">     
