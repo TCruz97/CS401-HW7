@@ -228,7 +228,7 @@ if(isset($_POST['in']))
         <script>
             $(function() {
                 $('.modal-content animate').validity()
-                    .on('submit', function(e) {
+                    .on('#submitButton', function(e) {
                     var $this = $(this),
                         $btn = $this.find('[type="submit"]');
                         $btn.button('loading');
