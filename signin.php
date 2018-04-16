@@ -125,7 +125,9 @@ if(isset($_POST['up']))
     //else{
         $y -> saveUser($email,$pass, $firstName, $lastName, $address, $city, $state, $zip);
     //}
-    crypt ($pass ,[ $salt ]);
+    //crypt ($pass ,[ $salt ]);
+    echo password_hash($pass, PASSWORD_DEFAULT);
+
 }
 
 if(isset($_POST['in']))
