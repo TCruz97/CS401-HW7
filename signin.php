@@ -80,7 +80,7 @@ else{
                     
                  <ul class = "signlist">
                     <!-- <li class = "login" style="float: right">/</li> -->
-                    <li class = "login" id="loginButton" style="float:right"><a href="signin.html">Sign-in</a></li>
+                    <li class = "login" id="loginButton" style="float:right"><a href="signin.php">Sign-in</a></li>
                   
                 
                 </ul>
