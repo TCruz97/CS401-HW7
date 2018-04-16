@@ -187,13 +187,12 @@ if(isset($_POST['in']))
           </div>
       
           <div class="container">
-            <!-- <input type="text" placeholder="Enter First Name" name="fName">
+            <input type="text" placeholder="Enter First Name" name="fName">
             <input type="text" placeholder="Enter Last Name" name="lName">
             <input type="text" placeholder="Enter Address" name="address">
             <input type="text" placeholder="Enter City" name="city">
             <input type="text" placeholder="Enter State" name="state">
-            <input type="text" placeholder="Enter Zip" name="zip"> -->
-            <label for="email">Enter your email:</label>
+            <input type="text" placeholder="Enter Zip" name="zip">
             <input type="text" placeholder="Enter email" name="email">
             <input type="password" placeholder="Enter Password" name="pass">  
             <input type="password" placeholder="Repeat Password" name="pswd2">     
