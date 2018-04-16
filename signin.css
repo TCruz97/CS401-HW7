@@ -353,13 +353,12 @@ p.footer-links a:hover {
 }
 
 .ui-tooltip {
-    margin-left: 150px;
+    margin-left: 250px;
     background-color: white;
     width: 100px;
     padding: 10px 20px;
     border-radius: 2px;
-    font: bold 3em"Helvetica Neue", Sans-Serif;
-    text-transform: uppercase;
+    font: bold 6px"Helvetica Neue", Sans-Serif;
     box-shadow: 0 0 7px black;
     z-index: 100;
 }
