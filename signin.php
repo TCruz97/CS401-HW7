@@ -6,8 +6,8 @@
     <link rel="shortcut icon" type="image/x-icon" href="https://cdn4.iconfinder.com/data/icons/objects-5/24/Needle-512.png" />
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="../code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script src="../dist/validator.js"></script>
+    <script src="~/code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="~/dist/validator.js"></script>
 
 
 
