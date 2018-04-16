@@ -97,9 +97,9 @@ else{
                 <ul class = "navList">
                         
                     <!-- <li class = "navEl" style="float:right"><a href="sale.html">Sale</a></li> -->
-                    <li class = "navEl"  style="float:right"><a href="trends.html">Whats Trending</a></li>
-                    <li class = "navEl"  style="float:right"><a href="designers.html">Our Designers</a></li>
-                    <li class = "navEl"  style="float:right" ><a  href="shop.html">Shop</a></li>
+                    <li class = "navEl"  style="float:right"><a href="trends.php">Whats Trending</a></li>
+                    <li class = "navEl"  style="float:right"><a href="designers.php">Our Designers</a></li>
+                    <li class = "navEl"  style="float:right" ><a  href="shop.php">Shop</a></li>
                   
                 
                 </ul>
@@ -119,14 +119,8 @@ if(isset($_POST['up']))
     $city = $_POST["city"];
     $state = $_POST["state"];
     $zip = $_POST["zip"];
-    // if($email == 0 || $pass == 0 || $firstName == 0 || $lastName == 0 || $address == 0 || $city == 0 || $state == 0 || $zip == 0){
-    //     //echo"error";
-    // }
-    //else{
-        $y -> saveUser($email,$pass, $firstName, $lastName, $address, $city, $state, $zip);
-    //}
-    //crypt ($pass ,[ $salt ]);
-    echo password_hash($pass, PASSWORD_DEFAULT);
+    $y -> saveUser($email,$pass, $firstName, $lastName, $address, $city, $state, $zip);
+    password_hash($pass, PASSWORD_DEFAULT);
 
 }
 

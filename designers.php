@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <html>
         <head>
                 <link rel = "stylesheet" type= "text/css" href="designers.css">
@@ -27,9 +30,9 @@
                 <!-- navagation elements -->
                 <div class="navbar">
                     <ul class = "navList">
-                        <li class = "navEl"  style="float:right"><a href="trends.html">Whats Trending</a></li>
-                        <li class = "navEl"  style="float:right"><a href="designers.html">Our Designers</a></li>
-                        <li class = "navEl"  style="float:right" ><a  href="shop.html">Shop</a></li>
+                        <li class = "navEl"  style="float:right"><a href="trends.php">Whats Trending</a></li>
+                        <li class = "navEl"  style="float:right"><a href="designers.php">Our Designers</a></li>
+                        <li class = "navEl"  style="float:right" ><a  href="shop.php">Shop</a></li>
                        
                     
                     </ul>
