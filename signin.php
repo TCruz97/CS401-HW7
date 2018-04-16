@@ -214,7 +214,7 @@ if(isset($_POST['in']))
             <input type="password" placeholder="Repeat Password" name="pass2">     
           
             <button type="submit" id="signButton" style="margin-left:200px;" name="up">Sign Up</button>
-            <script>
+            <!-- <script>
                 
                 $(document).ready(function () {
                     $("#signButton").click(function () {
@@ -238,7 +238,7 @@ if(isset($_POST['in']))
                     });
                 });
             </script>
-        
+         -->
 
 
         </div>
