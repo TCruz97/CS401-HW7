@@ -150,7 +150,7 @@ if(isset($_POST['in']))
               
           <div class="imgcontainer">
             <span onclick="document.getElementById('modal-wrapper1').style.display='none'" class="close" title="Close PopUp">&times;</span>
-            <img src="profile.svg" alt="Avatar" class="avatar">
+            <img src="logo2.png" alt="Avatar" class="avatar">
             <h1 style="text-align:center">Sign In</h1>
           </div>
       
