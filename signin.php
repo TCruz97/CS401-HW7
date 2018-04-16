@@ -15,7 +15,7 @@
 
     <script>
         $( function() {
-            $('.selector').tooltip();
+            $(document).tooltip();
         } );
         </script>
 </head>
