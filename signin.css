@@ -365,14 +365,14 @@ p.footer-links a:hover {
     z-index: 100;
 }
 
-.fName.error {
+.field.error {
     border-color: red;
 }
 
-.fName.mismatch {
+.field.mismatch {
     border-color: orange;
 }
 
-.fName.valid {
+.field.valid {
     border-color: green;
 }
