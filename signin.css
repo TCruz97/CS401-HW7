@@ -353,6 +353,18 @@ p.footer-links a:hover {
 }
 
 .tooltip {
-    margin-left: 500px;
-    color: white;
+    display: none;
+    background: black;
+    font-size: 12px;
+    height: 10px;
+    width: 80px;
+    padding: 10px;
+    color: #fff;
+    z-index: 99;
+    bottom: 10px;
+    border: 2px solid white;
+    /* for IE */
+    filter: alpha(opacity=80);
+    /* CSS3 standard */
+    opacity: 0.8;
 }
