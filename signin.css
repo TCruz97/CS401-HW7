@@ -358,7 +358,7 @@ p.footer-links a:hover {
     width: 100px;
     padding: 10px 20px;
     border-radius: 2px;
-    font: bold 6px"Helvetica Neue", Sans-Serif;
+    font: bold 10px"Helvetica Neue", Sans-Serif;
     box-shadow: 0 0 7px black;
     z-index: 100;
 }
