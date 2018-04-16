@@ -364,3 +364,15 @@ p.footer-links a:hover {
     box-shadow: 0 0 7px black;
     z-index: 100;
 }
+
+.your-field.error {
+    border-color: red;
+}
+
+.your-field.mismatch {
+    border-color: orange;
+}
+
+.your-field.valid {
+    border-color: green;
+}

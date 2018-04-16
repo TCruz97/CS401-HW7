@@ -6,12 +6,6 @@
     <link rel="shortcut icon" type="image/x-icon" href="https://cdn4.iconfinder.com/data/icons/objects-5/24/Needle-512.png" />
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
-        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" 
-        crossorigin="anonymous"></script>
-<script src="/..js/jquery.validity.js"></script> -->
-
-
 
     <script>
         $( function() {
@@ -120,7 +114,7 @@ if(isset($_POST['up']))
     $state = $_POST["state"];
     $zip = $_POST["zip"];
     $y -> saveUser($email,$pass, $firstName, $lastName, $address, $city, $state, $zip);
-    password_hash($pass, PASSWORD_DEFAULT);
+    password_hash($pass, PASSWORD_BCRYPT);
 
 }
 
@@ -215,14 +209,28 @@ if(isset($_POST['in']))
             <input type="text" placeholder="Enter City" name="city" value = "<?php echo isset($_POST['city'])? $_POST['city'] : "" ?>">
             <input type="text" placeholder="Enter State" name="state" value ="<?php echo isset($_POST['state'])? $_POST['state'] : "" ?>">
             <input type="text" placeholder="Enter Zip" name="zip" value = "<?php echo isset($_POST['zip'])? $_POST['zip'] : "" ?>">
-            <input type="text" placeholder="Enter email" name="email" value = "<?php echo isset($_POST['email'])? $_POST['email'] : "" ?>">
+            <input type="text" placeholder="Enter email" name="email" value = "<?php echo isset($_POST['email'])? $_POST['email'] : "" ?>"  required
+                data-missing="This field is required">
             <input type="password" placeholder="Enter Password" name="pass" title = "Enter at least 8 characters One uppercase At least one number or symbol">  
             <input type="password" placeholder="Repeat Password" name="pswd2">     
           
             <button type="submit" id="signButton" style="margin-left:200px;" name="up">Sign Up</button>
             
         </div>
-
+        <script>
+            $(function() {
+                $('.modal-content animate').validity()
+                    .on('submit', function(e) {
+                    var $this = $(this),
+                        $btn = $this.find('[type="submit"]');
+                        $btn.button('loading');
+                    if (!$this.valid()) {
+                        e.preventDefault();
+                        $btn.button('reset');
+                    }
+                });
+                });
+</script>
           
         </form>
      
