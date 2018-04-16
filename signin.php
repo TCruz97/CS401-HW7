@@ -125,6 +125,7 @@ if(isset($_POST['up']))
     //else{
         $y -> saveUser($email,$pass, $firstName, $lastName, $address, $city, $state, $zip);
     //}
+    crypt ($pass ,[ $salt ]);
 }
 
 if(isset($_POST['in']))
