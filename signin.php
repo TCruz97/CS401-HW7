@@ -12,7 +12,6 @@
     <script>
         $( function() {
             $( document ).tooltip();
-            tooltipClass: "tooltip"
         } );
         </script>
 </head>
