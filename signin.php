@@ -221,8 +221,8 @@ if(isset($_POST['in']))
                 data-missing="This field is required">
             <input class ="field" type="password" placeholder="Enter Password" name="pass" pattern = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d][A-Za-z\d$@$!%*#?&]{8,}$" title = "Enter at least 8 characters One uppercase At least one number or symbol"
                 required data-mismatch="Passwords must match the requested format">  
-            <input  class ="field" type="password" placeholder="Repeat Password" name="pswd2">     
-          
+            <input  class ="field" type="password" placeholder="Repeat Password" name="pass2" required data-mismatch="Passwords must match">     
+            
             <button type="submit" id="signButton" style="margin-left:200px;" name="up">Sign Up</button>
             
         </div>
@@ -232,19 +232,14 @@ if(isset($_POST['in']))
             //checking if form fields are validx
            $(function() {
 
-            var password1 =  document.getElementById('pass');     
-            var password2 = document.getElementById('pass2');
-
-            if(password1 != password2)
-            {
-                
-            }         
+        
+      
             $('.module-content').validity()
                 .on('submit', function(e) {
                 var $this = $(this),
                     $btn = $this.find('[type="submit"]');
                     $btn.button('loading');
-                if (!$this.valid()) {
+                if (!$this.valid()|| $('pass').val() != $('pass2').val()) {
                     e.preventDefault();
                     $btn.button('reset');
                 }
