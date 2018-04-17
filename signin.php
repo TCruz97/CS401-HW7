@@ -116,6 +116,7 @@ if(isset($_POST['up']))
     $zip = $_POST["zip"];
     $y -> saveUser($email,$pass, $firstName, $lastName, $address, $city, $state, $zip);
      password_hash($pass, PASSWORD_BCRYPT);
+     $_SESSION['login'] = "1";
 
 }
 
