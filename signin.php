@@ -156,7 +156,7 @@ if(isset($_POST['in']))
 </div>
 <div id="modal-wrapper1" class="modal">
   
-        <form class="modal-content animate" action="signin.php" method="post">
+        <form class="modal-content" action="signin.php" method="post">
         
               
           <div class="imgcontainer">
@@ -195,7 +195,7 @@ if(isset($_POST['in']))
 </div>
 <div id="modal-wrapper2" class="modal">
   
-        <form class="modal-content animate" action="signin.php" method = "post">
+        <form class="modal-content" action="signin.php" method = "post">
               
           <div class="imgcontainer">
             <span onclick="document.getElementById('modal-wrapper2').style.display='none'" class="close" title="Close Pop Up">&times;</span>
