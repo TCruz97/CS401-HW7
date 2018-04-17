@@ -177,18 +177,6 @@ if(isset($_POST['in']))
       </div>
       
       <script>
-      // If user clicks anywhere outside of the modal, Modal will close
-      
-      var modal = document.getElementById('modal-wrapper1');
-      window.onclick = function(event) {
-          if (event.target == modal) {
-              modal.style.display = "none";
-          }
-      }
-      </script>
-
-
-
 
 <!-- Sign-Up -->
 <div class = "rightHalf">
@@ -220,7 +208,7 @@ if(isset($_POST['in']))
             <input  class ="field" type="text"  placeholder="Enter email" name="email" value = "<?php echo isset($_POST['email'])? $_POST['email'] : "" ?>"  required
                 data-missing="This field is required">
             <input class ="field" type="password" placeholder="Enter Password" name="pass" pattern = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d][A-Za-z\d$@$!%*#?&]{8,}$" title = "Enter at least 8 characters One uppercase At least one number or symbol"
-                required data-missing="This field is required">  
+                required data-mismatch="Passwords must match the requested format">  
             <input  class ="field" type="password" placeholder="Repeat Password" name="pswd2">     
           
             <button type="submit" id="signButton" style="margin-left:200px;" name="up">Sign Up</button>
@@ -242,7 +230,7 @@ if(isset($_POST['in']))
                 }
             });
             });
-</script>
+        </script>
           
         </form>
      
