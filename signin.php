@@ -218,7 +218,7 @@ if(isset($_POST['in']))
             data-missing="This field is required">
             <input  type="text" class ="field" placeholder="Enter email" name="email" value = "<?php echo isset($_POST['email'])? $_POST['email'] : "" ?>"  required
                 data-missing="This field is required">
-            <input type="password" class ="field" placeholder="Enter Password" name="pass" pattern = "(?=.*[a-z]) (?=.*[A-Z]) (?=.*[0-9]) (?=.*[!@#\$%\^&\*]) (?=.{8,})" title = "Enter at least 8 characters One uppercase At least one number or symbol"
+            <input type="password" class ="field" placeholder="Enter Password" name="pass" pattern = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d][A-Za-z\d$@$!%*#?&]{8,}$" title = "Enter at least 8 characters One uppercase At least one number or symbol"
             required data-missing="This field is required">  
             <input  type="password" class ="field" placeholder="Repeat Password" name="pswd2">     
           
