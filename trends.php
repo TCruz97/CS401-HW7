@@ -44,7 +44,7 @@ session_start();
                 </div>
 
                 <div class="lookAt">
-                        <h2 class="title"><a href ="index.php">Shop This Trend</a></h2>
+                        <h2 class="title"><a href ="index.php">Shop</a></h2>
 
                 </div>
 
