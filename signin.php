@@ -217,7 +217,7 @@ if(isset($_POST['in']))
             data-missing="This field is required">
             <input class ="field" type="text"  placeholder="Enter Zip" name="zip" value = "<?php echo isset($_POST['zip'])? $_POST['zip'] : "" ?>" required
             data-missing="This field is required">
-            <input  class ="field" type="text"  placeholder="Enter email" name="email" value = "<?php echo isset($_POST['email'])? $_POST['email'] : "" ?>"  required
+            <input  class ="field" type="text"  placeholder="Enter email" name="email" pattern = "^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" value = "<?php echo isset($_POST['email'])? $_POST['email'] : "" ?>"  required
                 data-missing="This field is required">
             <input class ="field" type="password" placeholder="Enter Password" name="pass" pattern = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d][A-Za-z\d$@$!%*#?&]{8,}$" title = "Enter at least 8 characters One uppercase At least one number or symbol"
                 required data-mismatch="Passwords must match the requested format">  
