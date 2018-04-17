@@ -157,7 +157,7 @@ if(isset($_POST['in']))
 </div>
 <div id="modal-wrapper1" class="modal">
   
-        <form class="modal-content" action="signin.php" method="post">
+        <form class="content" action="signin.php" method="post">
         
               
           <div class="imgcontainer">
@@ -196,7 +196,7 @@ if(isset($_POST['in']))
 </div>
 <div id="modal-wrapper2" class="modal">
   
-        <form class="modal-content" action="signin.php" method = "post">
+        <form class="content" action="signin.php" method = "post">
               
           <div class="imgcontainer">
             <span onclick="document.getElementById('modal-wrapper2').style.display='none'" class="close" title="Close Pop Up">&times;</span>
@@ -231,7 +231,7 @@ if(isset($_POST['in']))
 
             //checking if form fields are validx
            $(function() {
-            $('.module-content').validity()
+            $('.content').validity()
                 .on('submit', function(e) {
                 var $this = $(this),
                     $btn = $this.find('[type="submit"]');
@@ -253,11 +253,11 @@ if(isset($_POST['in']))
       <script>
       // If user clicks anywhere outside of the modal, Modal will close
       
-      var modal1 = document.getElementById('modal-wrapper1');
+      //var modal1 = document.getElementById('modal-wrapper1');
       var modal2 = document.getElementById('modal-wrapper2');
       window.onclick = function(event) {
           if (event.target == modal1 || event.target == modal2) {
-              modal1.style.display = "none";
+            //  modal1.style.display = "none";
               modal2.style.display = "none";
           }
       }
