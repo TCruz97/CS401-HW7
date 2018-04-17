@@ -10,7 +10,7 @@
 
     <script>
         $( function() {
-            $(document).tooltip();
+            $(document).tooltip(); //Tooltip
         } );
     </script>
 </head>
@@ -203,7 +203,7 @@ if(isset($_POST['in']))
             <h1 style="text-align:center">Sign Up</h1>
           </div>
       
-          <div class="container">
+          <div class="container">                                                                       //How you save the form data
             <input  type="text" class ="field" placeholder="Enter First Name" name="fName" value="<?php echo isset($_POST['fName'])? $_POST['fName'] : "" ?>" required
             data-missing="This field is required">
             <input type="text" class ="field" placeholder="Enter Last Name" name="lName" value = "<?php echo isset($_POST['lName'])? $_POST['lName'] : "" ?>" required
@@ -218,7 +218,7 @@ if(isset($_POST['in']))
             data-missing="This field is required">
             <input  type="text" class ="field" placeholder="Enter email" name="email" value = "<?php echo isset($_POST['email'])? $_POST['email'] : "" ?>"  required
                 data-missing="This field is required">
-            <input type="password" class ="field" placeholder="Enter Password" name="pass" title = "Enter at least 8 characters One uppercase At least one number or symbol"
+            <input type="password" class ="field" placeholder="Enter Password" name="pass" pattern = "(?=.*[a-z]) (?=.*[A-Z]) (?=.*[0-9]) (?=.*[!@#\$%\^&\*]) (?=.{8,})" title = "Enter at least 8 characters One uppercase At least one number or symbol"
             required data-missing="This field is required">  
             <input  type="password" class ="field" placeholder="Repeat Password" name="pswd2">     
           
@@ -227,6 +227,8 @@ if(isset($_POST['in']))
         </div>
         
         <script>
+
+            //checking if form fields are validx
            $(function() {
             $(".module-content animate").validity()
                 .on('submit', function(e) {

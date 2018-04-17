@@ -354,6 +354,9 @@ p.footer-links a:hover {
     opacity: 0.8;
 }
 
+
+/* tooltip and validation styling */
+
 .ui-tooltip {
     margin-left: 250px;
     background-color: white;
