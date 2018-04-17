@@ -227,18 +227,18 @@ if(isset($_POST['in']))
         </div>
         
         <script>
-            $(function() {
-                $('.modal-content animate').validity()
-                    .on('#submitButton', function(e) {
-                    var $this = $(this),
-                        $btn = $this.find('[type="submit"]');
-                        $btn.button('loading');
-                    if (!$this.valid()) {
-                        e.preventDefault();
-                        $btn.button('reset');
-                    }
-                });
-                });
+           $(function() {
+            $(".module-content animate").validity()
+                .on('submit', function(e) {
+                var $this = $(this),
+                    $btn = $this.find('[type="submit"]');
+                    $btn.button('loading');
+                if (!$this.valid()) {
+                    e.preventDefault();
+                    $btn.button('reset');
+                }
+            });
+            });
 </script>
           
         </form>
