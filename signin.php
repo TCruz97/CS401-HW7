@@ -115,7 +115,7 @@ if(isset($_POST['up']))
     $state = $_POST["state"];
     $zip = $_POST["zip"];
     $y -> saveUser($email,$pass, $firstName, $lastName, $address, $city, $state, $zip);
-    password_hash($pass, PASSWORD_BCRYPT);
+    echo password_hash($pass, PASSWORD_BCRYPT);
 
 }
 
