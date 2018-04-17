@@ -68,7 +68,7 @@ session_start();
                                                         $('#f1').fadeIn('slow');     
                                                         console.log("got to second if")
                                                }
-                                        },8000);
+                                        },4000);
 
                                         });
 
