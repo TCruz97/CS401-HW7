@@ -203,7 +203,7 @@ if(isset($_POST['in']))
             <h1 style="text-align:center">Sign Up</h1>
           </div>
       
-          <div class="container">                                                                       //How you save the form data
+          <div class="container">                                                                     <!--   How you save the form data -->
             <input  type="text" class ="field" placeholder="Enter First Name" name="fName" value="<?php echo isset($_POST['fName'])? $_POST['fName'] : "" ?>" required
             data-missing="This field is required">
             <input type="text" class ="field" placeholder="Enter Last Name" name="lName" value = "<?php echo isset($_POST['lName'])? $_POST['lName'] : "" ?>" required
