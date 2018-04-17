@@ -368,7 +368,7 @@ p.footer-links a:hover {
     z-index: 100;
 }
 
-.field.error {
+.field {
     border-color: red
 }
 
