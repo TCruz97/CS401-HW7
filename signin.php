@@ -205,23 +205,23 @@ if(isset($_POST['in']))
           </div>
       
           <div class="container">                                                                     <!--   How you save the form data -->
-            <input  type="text" class ="field" placeholder="Enter First Name" name="fName" value="<?php echo isset($_POST['fName'])? $_POST['fName'] : "" ?>" required
+            <input class ="field" type="text" placeholder="Enter First Name" name="fName" value="<?php echo isset($_POST['fName'])? $_POST['fName'] : "" ?>" required
             data-missing="This field is required">
-            <input type="text" class ="field" placeholder="Enter Last Name" name="lName" value = "<?php echo isset($_POST['lName'])? $_POST['lName'] : "" ?>" required
+            <input class ="field" type="text" placeholder="Enter Last Name" name="lName" value = "<?php echo isset($_POST['lName'])? $_POST['lName'] : "" ?>" required
             data-missing="This field is required">
-            <input  type="text" class ="field" placeholder="Enter Address" name="address"value = "<?php echo isset($_POST['address'])? $_POST['address'] : "" ?>" required
+            <input  class ="field" type="text" placeholder="Enter Address" name="address"value = "<?php echo isset($_POST['address'])? $_POST['address'] : "" ?>" required
             data-missing="This field is required">
-            <input  type="text" class ="field" placeholder="Enter City" name="city" value = "<?php echo isset($_POST['city'])? $_POST['city'] : "" ?>" required
+            <input  class ="field" type="text"  placeholder="Enter City" name="city" value = "<?php echo isset($_POST['city'])? $_POST['city'] : "" ?>" required
             data-missing="This field is required">
-            <input  type="text" class ="field" placeholder="Enter State" name="state" value ="<?php echo isset($_POST['state'])? $_POST['state'] : "" ?>" required
+            <input  class ="field" type="text" placeholder="Enter State" name="state" value ="<?php echo isset($_POST['state'])? $_POST['state'] : "" ?>" required
             data-missing="This field is required">
-            <input type="text" class ="field" placeholder="Enter Zip" name="zip" value = "<?php echo isset($_POST['zip'])? $_POST['zip'] : "" ?>" required
+            <input class ="field" type="text"  placeholder="Enter Zip" name="zip" value = "<?php echo isset($_POST['zip'])? $_POST['zip'] : "" ?>" required
             data-missing="This field is required">
-            <input  type="text" class ="field" placeholder="Enter email" name="email" value = "<?php echo isset($_POST['email'])? $_POST['email'] : "" ?>"  required
+            <input  class ="field" type="text"  placeholder="Enter email" name="email" value = "<?php echo isset($_POST['email'])? $_POST['email'] : "" ?>"  required
                 data-missing="This field is required">
-            <input type="password" class ="field" placeholder="Enter Password" name="pass" pattern = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d][A-Za-z\d$@$!%*#?&]{8,}$" title = "Enter at least 8 characters One uppercase At least one number or symbol"
-            required data-missing="This field is required">  
-            <input  type="password" class ="field" placeholder="Repeat Password" name="pswd2">     
+            <input class ="field" type="password" placeholder="Enter Password" name="pass" pattern = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d][A-Za-z\d$@$!%*#?&]{8,}$" title = "Enter at least 8 characters One uppercase At least one number or symbol"
+                required data-missing="This field is required">  
+            <input  class ="field" type="password" placeholder="Repeat Password" name="pswd2">     
           
             <button type="submit" id="signButton" style="margin-left:200px;" name="up">Sign Up</button>
             
@@ -253,11 +253,11 @@ if(isset($_POST['in']))
       <script>
       // If user clicks anywhere outside of the modal, Modal will close
       
-      //var modal1 = document.getElementById('modal-wrapper1');
+      var modal1 = document.getElementById('modal-wrapper1');
       var modal2 = document.getElementById('modal-wrapper2');
       window.onclick = function(event) {
           if (event.target == modal1 || event.target == modal2) {
-            //  modal1.style.display = "none";
+              modal1.style.display = "none";
               modal2.style.display = "none";
           }
       }
