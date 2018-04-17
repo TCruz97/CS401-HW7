@@ -230,7 +230,7 @@ if(isset($_POST['in']))
 
             //checking if form fields are validx
            $(function() {
-            $(".module-content animate").validity()
+            $('.module-content').validity()
                 .on('submit', function(e) {
                 var $this = $(this),
                     $btn = $this.find('[type="submit"]');
