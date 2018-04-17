@@ -255,7 +255,7 @@ if(isset($_POST['in']))
       var modal1 = document.getElementById('modal-wrapper1');
       var modal2 = document.getElementById('modal-wrapper2');
       window.onclick = function(event) {
-          if (event.target == modal) {
+          if (event.target == modal1 || event.target == modal2) {
               modal1.style.display = "none";
               modal2.style.display = "none";
           }
