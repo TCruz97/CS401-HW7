@@ -237,13 +237,7 @@ if(isset($_POST['in']))
 
             if(password1 != password2)
             {
-                var $this = $(this),
-                    $btn = $this.find('[type="submit"]');
-                    $btn.button('loading');
-                if (!$this.valid()) {
-                    e.preventDefault();
-                    $btn.button('reset');
-                }
+                
             }         
             $('.module-content').validity()
                 .on('submit', function(e) {
