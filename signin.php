@@ -239,7 +239,7 @@ if(isset($_POST['in']))
                 var $this = $(this),
                     $btn = $this.find('[type="submit"]');
                     $btn.button('loading');
-                if (!$this.valid()|| $('pass').val() != $('pass2').val()) {
+                if ($('pass').val() != $('pass2').val() || !$this.valid() ) {
                     e.preventDefault();
                     $btn.button('reset');
                 }
