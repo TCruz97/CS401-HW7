@@ -252,10 +252,12 @@ if(isset($_POST['in']))
       <script>
       // If user clicks anywhere outside of the modal, Modal will close
       
-      var modal = document.getElementById('modal-wrapper2');
+      var modal1 = document.getElementById('modal-wrapper1');
+      var modal2 = document.getElementById('modal-wrapper2');
       window.onclick = function(event) {
           if (event.target == modal) {
-              modal.style.display = "none";
+              modal1.style.display = "none";
+              modal2.style.display = "none";
           }
       }
       </script>
